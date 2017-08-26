@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartLockLibrary.iml" filepath="$PROJECT_DIR$/SmartLockLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart_lock_library/smart_lock_library.iml" filepath="$PROJECT_DIR$/smart_lock_library/smart_lock_library.iml" />
+    </modules>
+  </component>
+</project>

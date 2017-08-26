@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="your_credentials">Credenziali:</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Registrati</string>
+    <string name="forget_credentials">Rimuovi le credenziali</string>
+    <string name="credentials_saved">Credenziali salvate</string>
+    <string name="credentials_retrieved">Credenziali recuperate da Smart Lock</string>
+    <string name="credentials_forgotten">Credenziali rimosse</string>
+    <string name="restart_app">RILANCIA APP</string>
+    <string name="error_store_incomplete_credentials">Si prega di compilare username e password prima</string>
+    <string name="error_store_failure">Salvataggio credenziali fallito, errore: %s.</string>
+    <string name="error_store_failure_log">Salvataggio credenziali fallito, verifica il log</string>
+    <string name="error_forget_no_credentials">Non esistono credenziali precedentemente salvate da rimuovere</string>
+    <string name="error_retrieve_fatal">Impossibile recuperate le credenziali precedentemente salvate</string>
+    <string name="error_retrieve_failure">Recupero delle credenziali precedentemente salvate fallito, errore: %s</string>
+    <string name="error_retrieve_failure_log">Recupero delle credenziali precedentemente salvate fallito, verifica il log</string>
+    <string name="error_signin_hint_failure">Accesso con suggerimento credenziali fallito, verifica il log</string>
+    <string name="error_forget_failure">Rimozione delle credenziali fallito, verifica il log</string>
+    <string name="reset">Reset</string>
+    <string name="error_smart_lock_disabled">Smart Lock è disabilitato per questa applicazione</string>
+    <string name="signed_in_as">Loggato come:</string>
+    <string name="logout">Uscita</string>
+    <string name="signing_in_with_stored_credentials">Accesso con credenziali precedentemente memorizzate&#8230;</string>
+    <string name="not_signed_up_prompt">Sembra che si potrebbe non avere un account salvato</string>
+    <string name="sign_up">Iscriviti ora</string>
+    <string name="connection_error">Risoluzione della connessione a Google Api Client di Smart Lock non riuscita, vedere il log</string>
+    <string name="connection_error_response">Connessione Smart Lock Google Api Client non riuscita:</string>
+
+</resources>

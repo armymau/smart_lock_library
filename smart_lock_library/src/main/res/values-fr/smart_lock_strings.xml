@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="your_credentials">Vos informations d\'identification:</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="hint_username">Nom d\'utilisateur</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="forget_credentials">Mot de passe oublié</string>
+    <string name="credentials_saved">Pouvoirs enregistrés</string>
+    <string name="credentials_retrieved">Informations d\'identification extraites de Smart Lock</string>
+    <string name="credentials_forgotten">Pouvoirs oubliés</string>
+    <string name="restart_app">RESTART APP</string>
+    <string name="error_store_incomplete_credentials">Veuillez entrer votre nom d\'utilisateur et votre mot de passe d\'abord</string>
+    <string name="error_store_failure">Échec de l\'enregistrement des informations d\'identification, erreur: %s</string>
+    <string name="error_store_failure_log">Échec de l\'enregistrement des informations d\'identification, voir log</string>
+    <string name="error_forget_no_credentials">Aucun justificatif enregistré pour oublier</string>
+    <string name="error_retrieve_fatal">Impossible de récupérer les informations d\'identification enregistrées</string>
+    <string name="error_retrieve_failure">Échec de l\'extraction des informations d\'identification enregistrées, erreur: %s</string>
+    <string name="error_retrieve_failure_log">Échec de la récupération des informations d\'identification enregistrées, voir log</string>
+    <string name="error_signin_hint_failure">Le lancement de l\'indicateur de connexion a échoué, voir log</string>
+    <string name="error_forget_failure">L\'oubli des informations d\'identification a échoué, voir log</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="error_smart_lock_disabled">Smart Lock est désactivé pour cette application</string>
+    <string name="signed_in_as">Connexion en tant que:</string>
+    <string name="logout">Déconnecter</string>
+    <string name="signing_in_with_stored_credentials">Connexion avec des informations d\'identification stockées&#8230;</string>
+    <string name="not_signed_up_prompt">On dirait que vous pourriez ne pas avoir de compte</string>
+    <string name="sign_up">S\'inscrire maintenant</string>
+    <string name="connection_error">Résolution de la connexion à Google API Client pour Smart Lock a échoué, voir le journal</string>
+    <string name="connection_error_response">Smart Lock La connexion de Google Api Client a échoué:</string>
+
+
+</resources>

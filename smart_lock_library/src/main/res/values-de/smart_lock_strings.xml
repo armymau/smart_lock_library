@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="your_credentials">Ihre anmeldeinformationen:</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="hint_username">Benutzername</string>
+    <string name="hint_password">Passwort</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="forget_credentials">Vergessen sie anmeldeinformationen</string>
+    <string name="credentials_saved">Anmeldeinformationen gespeichert</string>
+    <string name="credentials_retrieved">Anmeldeinformationen abgerufen Smart Lock</string>
+    <string name="credentials_forgotten">Anmeldeinformationen vergessen</string>
+    <string name="restart_app">ERNEUERN SIE APP</string>
+    <string name="error_store_incomplete_credentials">Bitte geben sie zunächst ihren benutzernamen und ihr passwort ein</string>
+    <string name="error_store_failure">Fehler beim anmeldeinformationen speichern, fehler: %s</string>
+    <string name="error_store_failure_log">Fehler beim speichern der anmeldeinformationen, siehe protokoll</string>
+    <string name="error_forget_no_credentials">Keine gespeicherten anmeldeinformationen zu vergessen</string>
+    <string name="error_retrieve_fatal">Gespeicherte anmeldeinformationen konnten nicht abgerufen werden</string>
+    <string name="error_retrieve_failure">Abrufen gespeicherter anmeldeinformationen fehlgeschlagen, fehler: %s</string>
+    <string name="error_retrieve_failure_log">Abrufen gespeicherter anmeldeinformationen fehlgeschlagen, siehe protokoll</string>
+    <string name="error_signin_hint_failure">Anmeldungshinweis fehlgeschlagen, siehe protokoll</string>
+    <string name="error_forget_failure">Anmeldeinformationen fehlgeschlagen, siehe protokoll</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="error_smart_lock_disabled">Smart Lock ist für diese App deaktiviert</string>
+    <string name="signed_in_as">Unterzeichnet als:</string>
+    <string name="logout">Ausloggen</string>
+    <string name="signing_in_with_stored_credentials">Melden sie sich mit gespeicherten berechtigungen&#8230;</string>
+    <string name="not_signed_up_prompt">Sieht aus, als hätten sie vielleicht kein konto</string>
+    <string name="sign_up">Melden sie sich jetzt an</string>
+    <string name="connection_error">Die Auflösung der Verbindung zum Google Api Smart Lock Client ist fehlgeschlagen, siehe das Protokoll</string>
+    <string name="connection_error_response">Smart Lock Google Api Client Verbindung fehlgeschlagen: </string>
+
+</resources>
