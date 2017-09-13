@@ -24,7 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
 
-    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
 
     compile 'com.github.armymau:core_library:v1.10'
 }
