@@ -12,4 +12,7 @@ public class SmartLockConstants {
     public static final int SMART_LOCK_READ_CREDENTIALS_REQUEST_CODE = 121;
     public static final int SMART_LOCK_STORE_CREDENTIALS_REQUEST_CODE = 122;
     public static final int SMART_LOCK_CODE_SIGNIN_HINT_REQUEST_CODE = 123;
+
+    public static final int NONE_OF_PREVIOUS_OPTIONS_RESULT_CODE = 1001;
+
 }

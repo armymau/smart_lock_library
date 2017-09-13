@@ -9,4 +9,6 @@ public interface SmartLockInterface {
     void onSmartLockCanceledResult();
 
     void onCredentialForgottenResult();
+
+    void onNoneOfCredentialOptionsResult();
 }

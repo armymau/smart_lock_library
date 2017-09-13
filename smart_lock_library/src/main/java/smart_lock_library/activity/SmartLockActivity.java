@@ -255,9 +255,11 @@ public class SmartLockActivity extends AppCompatActivity {
         if (resultCode == RESULT_OK) {
             Credential credentials = data.getParcelableExtra(Credential.EXTRA_KEY);
             onCredentialsRetrieved(credentials);
+        } else if (resultCode == SmartLockConstants.NONE_OF_PREVIOUS_OPTIONS_RESULT_CODE) {
+            listener.onNoneOfCredentialOptionsResult();
         } else {
             Log.e(SmartLockConstants.TAG, "Credentials read failed");
-            Snackbar.make(this.findViewById(android.R.id.content), R.string.error_retrieve_fatal, Snackbar.LENGTH_SHORT).show();
+            //Snackbar.make(this.findViewById(android.R.id.content), R.string.error_retrieve_fatal, Snackbar.LENGTH_SHORT).show();
             listener.onSmartLockCanceledResult();
         }
     }
