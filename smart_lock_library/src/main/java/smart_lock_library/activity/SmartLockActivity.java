@@ -258,6 +258,7 @@ public class SmartLockActivity extends AppCompatActivity {
         } else {
             Log.e(SmartLockConstants.TAG, "Credentials read failed");
             Snackbar.make(this.findViewById(android.R.id.content), R.string.error_retrieve_fatal, Snackbar.LENGTH_SHORT).show();
+            listener.onSmartLockCanceledResult();
         }
     }
 
