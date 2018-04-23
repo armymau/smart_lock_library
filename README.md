@@ -15,26 +15,26 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
   allprojects {
-  	repositories {
-		
+  	repositories {	
     ...
-			maven { url 'https://jitpack.io' }
-		}
+		maven { url 'https://jitpack.io' }
 	}
+  }
 ```
 
 **Step 2**. Add the dependency
 
 ```	
   dependencies {
-	      compile 'com.github.armymau:smart_lock_library:v1.4'
-	}
+  	compile 'com.github.armymau:smart_lock_library:v1.4'
+  }
 ```
 
 **Step 3**. You Extend your Login Activity with SmartLockActivity class and you can use SmartLockInterface
 
 
 ```	
+    
     //READ CREDENTIALS
     public void smartLockReadCredentials() {}
     
@@ -43,6 +43,7 @@ Add it in your root build.gradle at the end of repositories:
     
     //FORGET CREDENTIALS
     public void smartLockForgetCredentials(String username, String password) {}
+    
     
     
     /* SmartLockInterface */
@@ -55,6 +56,7 @@ Add it in your root build.gradle at the end of repositories:
     void onCredentialForgottenResult(); //Not save login credentials
 
     void onNoneOfCredentialOptionsResult();
+
 ```
 
   
