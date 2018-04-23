@@ -2,7 +2,7 @@
 
 # Google Smart Lock for Password on Android
 
-By integrating Smart Lock for Passwords into your Android app.
+Integrating Smart Lock for Passwords into your Android app in a simple and automatic way.
 
 You can automatically sign users in to your app using the credentials they have saved. Users can save both username-password credentials and federated identity provider credentials.
 Integrate Smart Lock for Passwords into your app by using the Credentials API to retrieve saved credentials on sign-in. Use successfully retrieved credentials to sign the user in, or use the Credentials API to rapidly on-board new users by partially completing your app's sign in or sign up form. Prompt users after sign-in or sign-up to store their credentials for future automatic authentication.
