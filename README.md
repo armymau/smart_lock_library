@@ -59,6 +59,9 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
 
+For more complete documentation 
+https://developers.google.com/identity/smartlock-passwords/android/
+
   
 ## Authors
 Armando Mennini
