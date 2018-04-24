@@ -74,4 +74,4 @@ https://developers.google.com/identity/smartlock-passwords/android/
 
   
 ## Authors
-Armando Mennini
+Armando Mennini  - [armymau](https://github.com/armymau)
