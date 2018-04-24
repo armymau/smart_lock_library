@@ -16,7 +16,6 @@ Add it in your root build.gradle at the end of repositories:
 ```
   allprojects {
   	repositories {	
-    ...
 		maven { url 'https://jitpack.io' }
 	}
   }
@@ -26,7 +25,7 @@ Add it in your root build.gradle at the end of repositories:
 
 ```	
   dependencies {
-  	compile 'com.github.armymau:smart_lock_library:v1.4'
+  	implementation 'com.github.armymau:smart_lock_library:v1.4'
   }
 ```
 
@@ -69,9 +68,11 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
 
+
 For more complete documentation 
 https://developers.google.com/identity/smartlock-passwords/android/
 
+  
   
 ## Authors
 Armando Mennini  - [armymau](https://github.com/armymau)
