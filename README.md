@@ -35,17 +35,22 @@ Add it in your root build.gradle at the end of repositories:
 
 ```	
     
+    
     /*
      * This method wrap Auth.CredentialsApi.request and retrieve user credentials if saved before
      */
     public void smartLockReadCredentials() {}
+    
     
     /*
      * This method wrap Auth.CredentialsApi.save() and store user credentials if Smart Lock is enable on device
      */
     public void smartLockStoreCredentials(String username, String password) {}
     
-    //FORGET CREDENTIALS
+    
+    /*
+     * This method wrap Auth.CredentialsApi.delete() and delete user credentials
+     */
     public void smartLockForgetCredentials(String username, String password) {}
     
     
@@ -60,6 +65,7 @@ Add it in your root build.gradle at the end of repositories:
     void onCredentialForgottenResult(); //Not save login credentials
 
     void onNoneOfCredentialOptionsResult();
+
 
 ```
 
