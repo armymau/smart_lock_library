@@ -35,10 +35,14 @@ Add it in your root build.gradle at the end of repositories:
 
 ```	
     
-    //READ CREDENTIALS
+    /*
+     * This method wrap Auth.CredentialsApi.request and retrieve user credentials if saved before
+     */
     public void smartLockReadCredentials() {}
     
-    //STORE CREDENTIALS
+    /*
+     * This method wrap Auth.CredentialsApi.save() and store user credentials if Smart Lock is enable on device
+     */
     public void smartLockStoreCredentials(String username, String password) {}
     
     //FORGET CREDENTIALS
