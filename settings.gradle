@@ -1,1 +1,1 @@
-include ':smart_lock_library'
+include ':app'
