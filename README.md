@@ -1,5 +1,3 @@
-#android #kotlin #android-library #smart_lock
-
 # Google Smart Lock for Password on Android
 
 By integrating Smart Lock for Passwords into your Android app.
