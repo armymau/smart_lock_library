@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt
+package smart_lock_library_kt
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

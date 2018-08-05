@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.activity
+package smart_lock_library_kt.activity
 
 import android.app.Activity
 import android.content.Context
@@ -16,13 +16,13 @@ import com.google.android.gms.auth.api.credentials.CredentialRequest
 import com.google.android.gms.auth.api.credentials.HintRequest
 import com.google.android.gms.common.api.GoogleApiClient
 import core.fragment.ProgressDialogFragment
-import smart_lock_library.it.armymau.smartlocklibrarykt.callback.ForgetCredentialsResultCallback
-import smart_lock_library.it.armymau.smartlocklibrarykt.callback.ReadCredentialsResultCallback
-import smart_lock_library.it.armymau.smartlocklibrarykt.callback.StoreCredentialsResultCallback
-import smart_lock_library.it.armymau.smartlocklibrarykt.common_interface.SmartLockInterface
-import smart_lock_library.it.armymau.smartlocklibrarykt.listener.GoogleApiClientConnectionListener
-import smart_lock_library.it.armymau.smartlocklibrarykt.preference.SmartLockLibraryPreference
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.*
+import smart_lock_library_kt.callback.ForgetCredentialsResultCallback
+import smart_lock_library_kt.callback.ReadCredentialsResultCallback
+import smart_lock_library_kt.callback.StoreCredentialsResultCallback
+import smart_lock_library_kt.common_interface.SmartLockInterface
+import smart_lock_library_kt.listener.GoogleApiClientConnectionListener
+import smart_lock_library_kt.preference.SmartLockLibraryPreference
+import smart_lock_library_kt.utils.*
 
 class SmartLockActivity : AppCompatActivity() {
 
@@ -32,7 +32,7 @@ class SmartLockActivity : AppCompatActivity() {
     lateinit var listener: SmartLockInterface
     var isAutoManageEnabled: Boolean = false
     lateinit var credentialsClient: GoogleApiClient
-    val smartLockLibraryPreference = SmartLockLibraryPreference()
+    private val smartLockLibraryPreference = SmartLockLibraryPreference()
 
     override fun onDestroy() {
         super.onDestroy()
@@ -116,10 +116,8 @@ class SmartLockActivity : AppCompatActivity() {
     fun smartLockStoreCredentials(username: String, password: String) {
 
         credentials = prepareCredentials(username, password)
-        if(credentials != null) {
-            val callback = StoreCredentialsResultCallback(this)
-            requestSaveCredentials(credentialsClient, credentials!!, callback)
-        }
+        val callback = StoreCredentialsResultCallback(this)
+        requestSaveCredentials(credentialsClient, credentials, callback)
     }
 
     private fun requestSaveCredentials(apiClient: GoogleApiClient?, credentials: Credential, callback: StoreCredentialsResultCallback) {
@@ -131,7 +129,6 @@ class SmartLockActivity : AppCompatActivity() {
     }
 
     fun onCredentialsStored() {
-        /* credentials_saved */
         Log.e(TAG, this.resources.getString(R.string.credentials_saved))
         listener.onCredentialsResult(credentials.id, credentials.password!!)
     }
@@ -141,16 +138,11 @@ class SmartLockActivity : AppCompatActivity() {
     //>>>>> FORGET CREDENTIALS
     fun smartLockForgetCredentials(username: String, password: String) {
         credentials = prepareCredentials(username, password)
-        if (credentials == null) {
-            Snackbar.make(this.findViewById<View>(android.R.id.content), R.string.error_forget_no_credentials, Snackbar.LENGTH_SHORT).show()
-            return
-        }
         showProgress()
         Auth.CredentialsApi.delete(credentialsClient, credentials).setResultCallback(ForgetCredentialsResultCallback(this))
     }
 
     fun onCredentialsForgottenListener() {
-        /* credentials_forgotten */
         Log.e(TAG, this.resources.getString(R.string.credentials_forgotten))
         listener.onCredentialForgottenResult()
     }

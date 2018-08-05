@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.utils
+package smart_lock_library_kt.utils
 
 const val TAG = ">>> SMART LOCK LIBRARY"
 const val isDebug = false

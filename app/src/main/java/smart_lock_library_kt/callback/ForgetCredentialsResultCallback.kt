@@ -1,12 +1,12 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.callback
+package smart_lock_library_kt.callback
 
 import android.content.Context
 import android.util.Log
 import armymau.it.smart_lock_library.R
 import com.google.android.gms.common.api.ResultCallback
 import com.google.android.gms.common.api.Status
-import smart_lock_library.it.armymau.smartlocklibrarykt.activity.SmartLockActivity
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.TAG
+import smart_lock_library_kt.activity.SmartLockActivity
+import smart_lock_library_kt.utils.TAG
 
 class ForgetCredentialsResultCallback : ResultCallback<Status> {
 

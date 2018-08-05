@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.common_interface
+package smart_lock_library_kt.common_interface
 
 interface SmartLockInterface {
 

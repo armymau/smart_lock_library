@@ -1,8 +1,8 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.preference
+package smart_lock_library_kt.preference
 
 import android.content.Context
 import core.preference.SharedPreferencesHelper
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.PREFERENCE_KEY_USE_SMART_LOCK
+import smart_lock_library_kt.utils.PREFERENCE_KEY_USE_SMART_LOCK
 
 class SmartLockLibraryPreference : SharedPreferencesHelper() {
 

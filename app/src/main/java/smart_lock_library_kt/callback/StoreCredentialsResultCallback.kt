@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.callback
+package smart_lock_library_kt.callback
 
 import android.content.Context
 import android.content.IntentSender
@@ -8,9 +8,9 @@ import armymau.it.smart_lock_library.R
 import com.google.android.gms.common.api.CommonStatusCodes
 import com.google.android.gms.common.api.ResultCallback
 import com.google.android.gms.common.api.Status
-import smart_lock_library.it.armymau.smartlocklibrarykt.activity.SmartLockActivity
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.SMART_LOCK_STORE_CREDENTIALS_REQUEST_CODE
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.TAG
+import smart_lock_library_kt.activity.SmartLockActivity
+import smart_lock_library_kt.utils.SMART_LOCK_STORE_CREDENTIALS_REQUEST_CODE
+import smart_lock_library_kt.utils.TAG
 
 class StoreCredentialsResultCallback : ResultCallback<Status> {
 

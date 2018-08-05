@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt
+package smart_lock_library_kt
 
 import org.junit.Test
 

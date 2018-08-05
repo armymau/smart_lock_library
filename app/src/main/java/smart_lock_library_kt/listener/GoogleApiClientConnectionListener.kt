@@ -1,4 +1,4 @@
-package smart_lock_library.it.armymau.smartlocklibrarykt.listener
+package smart_lock_library_kt.listener
 
 import android.content.Context
 import android.content.IntentSender
@@ -8,9 +8,9 @@ import android.util.Log
 import armymau.it.smart_lock_library.R
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.api.GoogleApiClient
-import smart_lock_library.it.armymau.smartlocklibrarykt.activity.SmartLockActivity
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.SMART_LOCK_CONNECT_REQUEST_CODE
-import smart_lock_library.it.armymau.smartlocklibrarykt.utils.TAG
+import smart_lock_library_kt.activity.SmartLockActivity
+import smart_lock_library_kt.utils.SMART_LOCK_CONNECT_REQUEST_CODE
+import smart_lock_library_kt.utils.TAG
 
 class GoogleApiClientConnectionListener : GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
