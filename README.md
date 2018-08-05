@@ -38,28 +38,32 @@ Add it in your root build.gradle at the end of repositories:
     /*
      * This method wrap Auth.CredentialsApi.request and retrieve user credentials if saved before
      */
-    public void smartLockReadCredentials() {}
+    fun smartLockReadCredentials() {}
     
 
     //STORE CREDENTIALS
     /*
      * This method wrap Auth.CredentialsApi.save() and store user credentials if Smart Lock is enable on device
      */
-    public void smartLockStoreCredentials(String username, String password) {}
+    fun smartLockStoreCredentials(username: String, password: String) {}
     
 
     /*
      * This method wrap Auth.CredentialsApi.delete() and delete user credentials
      */
-    public void smartLockForgetCredentials(String username, String password) {}
+    fun smartLockStoreCredentials(username: String, password: String) {}
     
     
     /* SmartLockInterface */
-    void onCredentialsResult(String username, String password); //you can use auto login from credential retrieved
-     void signInRequiredResult(); //Mandatory access to login
-     void onSmartLockCanceledResult(); //Mandatory access due to no-retrieve of credentials from Smart Lock
-     void onCredentialForgottenResult(); //Not save login credentials
-     void onNoneOfCredentialOptionsResult();
+    fun onCredentialsResult(username: String, password: String) //you can use auto login from credential retrieved
+
+    fun signInRequiredResult() //Mandatory access to login
+
+    fun onSmartLockCanceledResult() //Mandatory access due to no-retrieve of credentials from Smart Lock
+
+    fun onCredentialForgottenResult() //Not save login credentials
+
+    fun onNoneOfCredentialOptionsResult()
 ```
    
 For more complete documentation 
