@@ -28,6 +28,7 @@
     <string name="sign_up">Sign up now</string>
     <string name="connection_error">Smart Lock GoogleApiClient result resolution failed, see log</string>
     <string name="connection_error_response">Smart Lock Google Api Client connection failed: </string>
+    <string name="waiting">Waiting …</string>
 
 
 </resources>

@@ -28,5 +28,6 @@
     <string name="sign_up">Suscríbase ahora</string>
     <string name="connection_error">Resolución de la conexión a Google API Client para Smart Lock no, ver el registro</string>
     <string name="connection_error_response">Error en la conexión Smart Lock de Google Api Client: </string>
+    <string name="waiting">Esperando …</string>
 
 </resources>

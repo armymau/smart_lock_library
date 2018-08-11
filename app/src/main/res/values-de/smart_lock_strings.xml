@@ -28,5 +28,6 @@
     <string name="sign_up">Melden sie sich jetzt an</string>
     <string name="connection_error">Die Auflösung der Verbindung zum Google Api Smart Lock Client ist fehlgeschlagen, siehe das Protokoll</string>
     <string name="connection_error_response">Smart Lock Google Api Client Verbindung fehlgeschlagen: </string>
+    <string name="waiting">Warten …</string>
 
 </resources>

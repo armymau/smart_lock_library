@@ -28,5 +28,6 @@
     <string name="sign_up">Iscriviti ora</string>
     <string name="connection_error">Risoluzione della connessione a Google Api Client di Smart Lock non riuscita, vedere il log</string>
     <string name="connection_error_response">Connessione Smart Lock Google Api Client non riuscita:</string>
+    <string name="waiting">Attendere …</string>
 
 </resources>

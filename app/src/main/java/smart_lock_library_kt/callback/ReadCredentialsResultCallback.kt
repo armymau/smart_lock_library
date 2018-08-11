@@ -13,15 +13,7 @@ import smart_lock_library_kt.activity.SmartLockActivity
 import smart_lock_library_kt.utils.SMART_LOCK_READ_CREDENTIALS_REQUEST_CODE
 import smart_lock_library_kt.utils.TAG
 
-class ReadCredentialsResultCallback : ResultCallback<CredentialRequestResult> {
-
-    var context: Context
-    var retryOnInternalError: Boolean = false
-
-    constructor(context: Context, retryOnInternalError: Boolean) {
-        this.context = context
-        this.retryOnInternalError = retryOnInternalError
-    }
+class ReadCredentialsResultCallback(var context: Context, var retryOnInternalError: Boolean) : ResultCallback<CredentialRequestResult> {
 
     override fun onResult(result: CredentialRequestResult) {
         //4

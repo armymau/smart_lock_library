@@ -8,13 +8,7 @@ import com.google.android.gms.common.api.Status
 import smart_lock_library_kt.activity.SmartLockActivity
 import smart_lock_library_kt.utils.TAG
 
-class ForgetCredentialsResultCallback : ResultCallback<Status> {
-
-    var context: Context
-
-    constructor(context: Context) {
-        this.context = context
-    }
+class ForgetCredentialsResultCallback(var context: Context) : ResultCallback<Status> {
 
     override fun onResult(status: Status) {
 

@@ -12,13 +12,7 @@ import smart_lock_library_kt.activity.SmartLockActivity
 import smart_lock_library_kt.utils.SMART_LOCK_STORE_CREDENTIALS_REQUEST_CODE
 import smart_lock_library_kt.utils.TAG
 
-class StoreCredentialsResultCallback : ResultCallback<Status> {
-
-    var context: Context
-
-    constructor(context: Context) {
-        this.context = context
-    }
+class StoreCredentialsResultCallback(var context: Context) : ResultCallback<Status> {
 
     override fun onResult(status: Status) {
 

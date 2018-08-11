@@ -1,6 +1,7 @@
 package smart_lock_library_kt.activity
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -15,7 +16,7 @@ import com.google.android.gms.auth.api.credentials.CredentialPickerConfig
 import com.google.android.gms.auth.api.credentials.CredentialRequest
 import com.google.android.gms.auth.api.credentials.HintRequest
 import com.google.android.gms.common.api.GoogleApiClient
-import core.fragment.ProgressDialogFragment
+import org.jetbrains.anko.indeterminateProgressDialog
 import smart_lock_library_kt.callback.ForgetCredentialsResultCallback
 import smart_lock_library_kt.callback.ReadCredentialsResultCallback
 import smart_lock_library_kt.callback.StoreCredentialsResultCallback
@@ -26,7 +27,7 @@ import smart_lock_library_kt.utils.*
 
 class SmartLockActivity : AppCompatActivity() {
 
-    lateinit var dialog: ProgressDialogFragment
+    lateinit var dialog : ProgressDialog
     lateinit var credentialsRequest: CredentialRequest
     lateinit var credentials: Credential
     lateinit var listener: SmartLockInterface
@@ -187,14 +188,18 @@ class SmartLockActivity : AppCompatActivity() {
     }
 
     fun showProgress() {
-        dialog = ProgressDialogFragment()
-        dialog.show(supportFragmentManager, R.string.core_waiting)
+
+        dialog = indeterminateProgressDialog(message = getString(R.string.waiting))
+        dialog.show()
+
+        //dialog = ProgressDialogFragment()
+        //dialog.show(supportFragmentManager, R.string.core_waiting)
     }
 
     fun hideProgress() {
-        if (dialog.isAdded) {
-            dialog.dismissAllowingStateLoss()
-        }
+        //if (dialog.isAdded) {
+            dialog.dismiss()
+        //}
     }
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
