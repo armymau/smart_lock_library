@@ -25,7 +25,7 @@ import smart_lock_library_kt.listener.GoogleApiClientConnectionListener
 import smart_lock_library_kt.preference.SmartLockLibraryPreference
 import smart_lock_library_kt.utils.*
 
-class SmartLockActivity : AppCompatActivity() {
+open class SmartLockActivity : AppCompatActivity() {
 
     lateinit var dialog : ProgressDialog
     lateinit var credentialsRequest: CredentialRequest

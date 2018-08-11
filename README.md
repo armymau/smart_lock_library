@@ -25,7 +25,7 @@ Add it in your root build.gradle at the end of repositories:
 
 ```	
   dependencies {
-	      compile 'com.github.armymau:smart_lock_library:v1.7'
+	      compile 'com.github.armymau:smart_lock_library:v1.8'
 	}
 ```
 
