@@ -12,13 +12,7 @@ import smart_lock_library_kt.activity.SmartLockActivity
 import smart_lock_library_kt.utils.SMART_LOCK_CONNECT_REQUEST_CODE
 import smart_lock_library_kt.utils.TAG
 
-class GoogleApiClientConnectionListener : GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
-
-    var context: Context
-
-    constructor(context: Context) {
-        this.context = context
-    }
+class GoogleApiClientConnectionListener(var context: Context) : GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     override fun onConnected(bundle: Bundle?) {
         Log.d(TAG, "onConnected")
