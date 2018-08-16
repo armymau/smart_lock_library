@@ -25,12 +25,15 @@ import smart_lock_library_kt.listener.GoogleApiClientConnectionListener
 import smart_lock_library_kt.preference.SmartLockLibraryPreference
 import smart_lock_library_kt.utils.*
 
+
+
 open class SmartLockActivity : AppCompatActivity() {
 
     lateinit var dialog : ProgressDialog
     lateinit var credentialsRequest: CredentialRequest
     lateinit var credentials: Credential
     lateinit var listener: SmartLockInterface
+
     var isAutoManageEnabled: Boolean = false
     lateinit var credentialsClient: GoogleApiClient
     private val smartLockLibraryPreference = SmartLockLibraryPreference()
@@ -59,6 +62,7 @@ open class SmartLockActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        listener = this as SmartLockInterface
         initGoogleApi()
     }
 
